@@ -13,10 +13,12 @@ The project also includes the LED widged indicating the status of remotely contr
 ![diagram.png](diagram.png)
 
 ### Photo
-![](photo.PNG)
+![](photo.PNG)&nbsp;&nbsp;&nbsp;<img src="2_ch_relay.PNG" height="432">
 
 ## Blynk project
+The blue circle shaped button in top left corner controls the blue on-board LED. It may be used for testing purpose.
+The LED widget is represented with green circle in left bottom corner showing the status of D2.
 
-![](Screenshot_01.jpeg | width=250)
-![](Screenshot_02.jpeg | width=250)
+<img src="Screenshot_01.jpeg" width="350">&nbsp;&nbsp;&nbsp;&nbsp;<img src="Screenshot_02.jpeg" width="350">
+
 
