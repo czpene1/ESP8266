@@ -18,7 +18,7 @@ Remember that NodeMCU pins are numbered differently than internal GPIO notations
 | G | - | GND | Ground |
 
 
-<img src="https://github.com/czpene1/ESP8266/blob/master/Azure/aziot_esp8266_ds18b20/docs/breadboard.png" width="400">
+<img src="https://github.com/czpene1/ESP8266/blob/master/Azure/aziot_esp8266_ds18b20/docs/breadboard.png" width="600">
 
 ## Setup and Run Instructions
 
@@ -52,7 +52,7 @@ Last, configure the interval how often to send the messages to the IoT Hub.
 
 ![](docs/iot_configs.h.png)
 
-<img src="https://github.com/czpene1/ESP8266/blob/master/Azure/aziot_esp8266_ds18b20/docs/primary_key.png" width="400">
+<img src="https://github.com/czpene1/ESP8266/blob/master/Azure/aziot_esp8266_ds18b20/docs/primary_key.png" width="600">
 
 ### Upload the code
 In my case I'm using the NodeMCU model equipped with CH340. Further instruction on how to install the driver are in the folder [CH340](../CH340/Readme.md). 
