@@ -27,7 +27,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-// Data wire is plugged TO GPIO 4
+// Data wire is plugged TO GPIO 4 (marked  D2 on Node MCU))
 #define ONE_WIRE_BUS 4
 
 // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
@@ -360,7 +360,7 @@ void readSensors(){
       else if (i == 1) { temp_1 = sensors.getTempC(tempDeviceAddress);}
     }
   }
-  delay(5000);
+  delay(5000); // wait 5 seconds
 }
 
 
@@ -387,15 +387,13 @@ static void sendTelemetry()
     return;
   }
 
-  //mqtt_client.publish(telemetry_topic, getTelemetryPayload(), false);  // Original value
-    
-  
+  // Convert float to string
   String stringOne = String(temp_0, 2);// using a float and the decimal places
   String stringTwo = String(temp_1, 2);// using a float and the decimal places
   char buffer[128];
-  //sprintf(buffer, "%d", millis());                                                                      // Convert millis() to a char array in buffer and terminate it with a zero
-  sprintf(buffer, "{ temp_0: %s, temp_1: %s }", stringOne, stringTwo);                    // Create a simple JSON structure, konvert float to string with 2 decimal places
-  mqtt_client.publish(telemetry_topic, buffer, false);                                                    // Added for testing purposes
+
+  sprintf(buffer, "{ temp_0: %s, temp_1: %s }", stringOne, stringTwo);     // Create a simple JSON structure { temp_0: xx, temp_1: xx }
+  mqtt_client.publish(telemetry_topic, buffer, false);                     // Send message to IoT Hub
 
   Serial.println("OK");
   delay(100);

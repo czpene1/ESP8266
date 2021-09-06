@@ -23,10 +23,10 @@ Remember that NodeMCU pins are numbered differently than internal GPIO notations
 ## Setup and Run Instructions
 
 ### Install Arduino libraries
-- Run [New-ArduinoZipLibrary.ps1](files/New-ArduinoZipLibrary.ps1) to generate zipped Arduino library for the Azure SDK for Embedded C..
+- Run [New-ArduinoZipLibrary.ps1](files/New-ArduinoZipLibrary.ps1) to generate zipped Arduino library for the Azure SDK for Embedded C.
 - Or you may use one stored in the [azure-sdk-for-c.zip](files/azure-sdk-for-c.zip) file and import it into Arduino IDE. On the Arduino IDE, go to Sketch, Include Library, Add .ZIP Library....
 - Install other libraries needed for temperature measurement. 
-  - DalasTemperature by Miles Burton
+  - DallasTemperature by Miles Burton
   - OneWire by Paul Stoffregen
 
 ### Generate CA certificate
