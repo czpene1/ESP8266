@@ -92,7 +92,7 @@ Use Serial monitor to check the status of the device
 10:46:27.978 -> 50050 ESP8266 Sending telemetry . . . OK
 ```
 
-The device telemetry and messages sent to an IoT Hub van be monitored by az cli. Current temperature is carried in the payload section.   
+The device telemetry and messages sent to an IoT Hub can be monitored by az cli. Current temperature values are carried in the payload section.   
 
 ```
 PS C:\ESP8266\Azure\aziot_esp8266> az iot hub monitor-events --hub-name "NodeMCU-demo-IoTHub" --device-id "NodeMCU-01"
