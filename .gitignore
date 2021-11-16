@@ -2,3 +2,4 @@
 .idea
 Blynk2/Thermometer_2x_DS18B20/Thermometer_2x_DS18B20.ino.nodemcu.bin
 Blynk2/Thermometer_2x_DS18B20/blynk_configs.h
+Blynk2/LED_Blink/blynk_configs.h
